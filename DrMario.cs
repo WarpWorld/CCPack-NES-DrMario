@@ -1,4 +1,5 @@
 ﻿using ConnectorLib;
+using CrowdControl.Common;
 using JetBrains.Annotations;
 using ConnectorType = CrowdControl.Common.ConnectorType;
 
