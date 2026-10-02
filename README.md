@@ -1,5 +1,11 @@
 ﻿# Dr. Mario
 
+## Pack metadata
+
+- Game identifier: `DrMario`
+- Platform: `NES`
+- Connector type: `NESConnector`
+
 ## What this pack provides
 This Crowd Control pack integrates **Dr. Mario** with Crowd Control through its NES pack implementation. Its source defines the game-state checks and effect handling.
 
