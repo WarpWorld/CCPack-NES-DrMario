@@ -77,12 +77,8 @@ public class DrMario : NESEffectPack
         HI = 0x02
     }
     
-    public override EffectList Effects
-    {
-        get
-        {
-            List<Effect> effects =
-            [
+    public override EffectList Effects { get; } =
+            new List<Effect>([
                 new("Speed Up", "speedup") { Description = "Increases the speed of the game.", Quantity = 1..10, Price = 10 },
                 new("Speed Down", "speeddown") { Description = "Decreases the speed of the game.", Quantity = 1..10, Price = 10 },
                 
@@ -114,11 +110,10 @@ public class DrMario : NESEffectPack
                 new("Set Music: Fever", "musicFever") { Description = "Sets the music to Fever, takes effect at next level.", Price = 5 },
                 new("Set Music: Chill", "musicChill") { Description = "Sets the music to Chill, takes effect at next level.", Price = 5 },
                 new("Set Music: Off", "musicOff") { Description = "Sets the music to Off, takes effect at next level.", Price = 5 },
-            ];
+            ]);
 
-            return effects;
-        }
-    }
+
+
     
     public override Game Game { get; } = new("Dr. Mario", "DrMario", "NES", ConnectorType.NESConnector);
     
